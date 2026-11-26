@@ -1,6 +1,6 @@
 ## Ex. No: 7 – Configure Initial Router Settings
-# Date: ___________
-________________________________________
+# Date: 26-11-2026
+________________________________________<br>
 # Objective
 To perform basic router configuration tasks in Cisco Packet Tracer including:<br>
 •	Verifying the default router configuration.<br>
@@ -16,9 +16,10 @@ ________________________________________<br>
 •	Console cable (RS-232 to Console)<br>
 ________________________________________<br>
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot here showing Router R1 and PC with console connection)
-________________________________________
-# Procedure
+<img width="1600" height="1000" alt="WhatsApp Image 2026-11-26 at 8 28 37 AM" src="https://github.com/user-attachments/assets/b14b1f2b-5bae-4454-8514-5cc692710241" />
+________________________________________<br>
+
+## Procedure
 # Part 1: Verify the Default Router Configuration
 1.	Connect PC → Router R1 using a Console cable.<br>
 2.	On PC → Desktop → Terminal → Connect to R1.<br>
@@ -31,7 +32,7 @@ o	Observe hostname, interfaces, vty lines.<br>
 8.	Display startup configuration:<br>
 9.	Router# show startup-config<br>
 o	Router shows: startup-config is not present (because nothing is saved in NVRAM yet).<br>
-________________________________________
+________________________________________<br>
 # Part 2: Configure and Verify Initial Router Configuration
 1.	Enter global configuration mode:<br>
 2.	Router# configure terminal<br>
@@ -56,7 +57,7 @@ o	On exit, router shows MOTD.<br>
 o	User is prompted for password.<br>
 o	Enter letmein (console) → access User EXEC mode.<br>
 o	Enter itsasecret → access Privileged EXEC mode.<br>
-________________________________________
+________________________________________<br>
 # Part 3: Save the Running Configuration
 1.	Save running configuration to NVRAM:<br>
 2.	R1# copy running-config startup-config<br>
@@ -68,7 +69,7 @@ o	Confirms saved configuration.<br>
 5.	Save startup config to flash (backup):<br>
 6.	R1# copy startup-config flash<br>
 o	Use show flash to verify file stored in flash.<br>
-________________________________________
+________________________________________<br>
 # Commands Used
 •	To enter privileged mode: enable<br>
 •	To view config: show running-config, show startup-config<br>
@@ -77,14 +78,15 @@ ________________________________________
 •	To set passwords: enable password, enable secret, line console<br>
 •	To encrypt passwords: service password-encryption<br>
 •	To save configuration: copy running-config startup-config, wr, copy startup-config flash<br>
-________________________________________
+________________________________________<br>
 # Output (Attach Screenshots)
 •	Console connection to router<br>
 •	Running configuration before and after<br>
 •	MOTD banner display<br>
 •	Password prompts<br>
 •	Saved configuration in NVRAM and flash<br>
-________________________________________
+<img width="1600" height="1000" alt="WhatsApp Image 2026-11-26 at 8 51 57 AM" src="https://github.com/user-attachments/assets/e60543c4-ac1b-4ec3-ac57-c89fef66d7d0" />
+<img width="1600" height="1000" alt="WhatsApp Image 2026-11-26 at 8 55 07 AM" src="https://github.com/user-attachments/assets/4ef8c3ab-1d6a-47a9-8caa-7e43d989ebef" />
+________________________________________<br>
 # Result
 The router was successfully configured with hostname, banner, encrypted passwords, and secure console access. The configuration was verified and saved to NVRAM and flash, ensuring persistence across reboots.
-
